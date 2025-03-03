@@ -1,39 +1,77 @@
-body {
-  margin: 0;
-  background-color: #101212;
-}
-
-#topText {
-  position: fixed;
-  top: 10px;
+/* Style for the car info text */
+.car-info {
+  position: absolute;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 24px;
-  font-weight: bold;
+  text-align: center;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
-  z-index: 1000;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  z-index: 10; /* Ensure it stays on top */
 }
 
+/* Car title */
+.car-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Car description */
+.car-info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  max-width: 100%;
+}
+
+/* Fade-in animation for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Style for navigation buttons */
 .button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 20px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  z-index: 10; /* Keep buttons above canvas */
 }
 
+.button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Positioning buttons on the sides */
 .button-left {
   left: 10px;
 }
 
 .button-right {
   right: 10px;
+}
+
+/* Ensure the 3D canvas stays below UI elements */
+canvas {
+  z-index: 1;
 }
