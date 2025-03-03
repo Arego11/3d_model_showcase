@@ -15,9 +15,9 @@ const carData = [
       description: "The AE86 is an iconic JDM car, famous for its lightweight chassis and incredible drift capabilities, featured in Initial D."
     },
     {
-      name: "Porsche 911 GT3 (2022)",
-      path: "/img/porsche_2022.glb",
-      description: "A modern masterpiece, the Porsche 911 GT3 offers track-level performance with a naturally aspirated flat-six and incredible aerodynamics."
+      name: "Nissan GT-R Nismo",
+      path: "/img/2015_nissan.glb",
+      description: "The Nissan GT-R Nismo is the high-performance variant of the R35 GT-R, engineered for extreme speed and precision. Featuring a hand-built 3.8L twin-turbo V6 producing 600 horsepower."
     },
     {
       name: "Hoonicorn Mustang",
@@ -25,14 +25,9 @@ const carData = [
       description: "Ken Block’s Hoonicorn is a custom-built AWD 1400HP Mustang designed for extreme drifting and gymkhana performances."
     },
     {
-      name: "Ferrari LaFerrari",
-      path: "/img/laferrari.glb",
-      description: "Ferrari’s hybrid hypercar, the LaFerrari, combines a V12 engine with an electric motor to deliver breathtaking speed and performance."
-    },
-    {
-      name: "Nissan GT-R R35",
-      path: "/img/gtr.glb",
-      description: "The Nissan GT-R, also known as Godzilla, is a high-performance sports car with an advanced AWD system and twin-turbo V6."
+      name: "Nissan skyline gt500",
+      path: "/img/nissan_skyline_gt500.glb",
+      description: "The Nissan Skyline GT500 is a race-spec version of the iconic Skyline, built for Japan’s Super GT racing series. With an aggressive aerodynamic design, lightweight construction."
     }
   ];
   
